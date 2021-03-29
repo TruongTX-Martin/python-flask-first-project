@@ -4,7 +4,7 @@ ENV PYTHONUNBUFFERED=1
 RUN mkdir /var/www
 WORKDIR /var/www
 
-COPY requirements.txt /code/
+COPY requirements.txt /var/www
 RUN pip install -r requirements.txt
 
 COPY . /var/www/app
