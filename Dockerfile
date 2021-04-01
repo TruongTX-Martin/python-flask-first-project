@@ -10,3 +10,5 @@ RUN pip install -r requirements.txt
 COPY . /var/www/app
 WORKDIR /var/www/app
 CMD ["python", "manage.py", "run"]
+
+
